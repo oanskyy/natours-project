@@ -50,3 +50,30 @@ body {
 .logo { 
   height: 35px; 
 }
+
+.text-box { 
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary { 
+  color: #fff; 
+  text-transform: uppercase;
+}
+/* span and img elem are inline elem, just like text. So display the span elements as block level so they occupy the entire width that they have available and they create line breaks after and before them */
+
+.heading-primary--main { 
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+}
+
+.heading-primary--sub { 
+  display: block;
+  font-size: 20px;
+  font-weight: 700; 
+  letter-spacing: 17.4px;
+}
