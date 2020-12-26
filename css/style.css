@@ -12,12 +12,12 @@ Dark green: #28b485
   margin: 0; 
   padding: 0; 
   box-sizing: border-box; 
-  // changes the box model so that the padding and borders/margin are not longer added to the total width or height of the element
+  /* changes the box model so that the padding and borders/margin are not longer added to the total width or height of the element */
 }
 
 body { 
-  // properties related to font are usually inherited, so we are using the power of inheritance 
-  // set the font family on the body, which is the parent element of the other elem. And then this font family will get inherited by all the child elemtns of the body 
+  /* properties related to font are usually inherited, so we are using the power of inheritance 
+  set the font family on the body, which is the parent element of the other elem. And then this font family will get inherited by all the child elemtns of the body */
   font-family: "Lato", sans-serif; 
   font-weight: 400; 
   font-size: 16px; 
@@ -35,5 +35,18 @@ body {
   url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
+  position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 } 
+
+/* the image is acutally an inline element. so it's a better practive to first have a small container/div where the image is inside  and then position that container to where we want the img to be  */
+
+.logo-box { 
+  position: absolute; 
+  top: 40px; 
+  left: 40px; 
+}
+
+.logo { 
+  height: 35px; 
+}
