@@ -61,6 +61,7 @@ body {
 .heading-primary { 
   color: #fff; 
   text-transform: uppercase;
+  backface-visibility: hidden;
 }
 /* span and img elem are inline elem, just like text. So display the span elements as block level so they occupy the entire width that they have available and they create line breaks after and before them */
 
