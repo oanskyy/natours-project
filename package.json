@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oanskyy/natours-project.git"
+  },
+  "author": "Oansky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oanskyy/natours-project/issues"
+  },
+  "homepage": "https://github.com/oanskyy/natours-project#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
