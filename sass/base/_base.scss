@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* This defines what 1REM is 
+  10 / 16 = 0.625
+  font-size: 10px; */
+}
+
+body {
+  box-sizing: border-box;
+  /* changes the box model so that the padding and borders/margin are not longer added to the total width or height of the element */
+}
