@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: #eee;
   margin: 0 auto;
   margin-bottom: $gutter-horizontal;
 
@@ -13,7 +12,6 @@
   /* select with attribute selector
    it will select all of the elements in which the class attribute starts with ^ = "col-" */
   [class^="col-"] {
-    background-color: orangered;
     float: left;
 
     &:not(:last-child) {

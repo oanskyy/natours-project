@@ -177,6 +177,10 @@ body {
   text-align: center;
 }
 
+.u-margin-bottom-8 {
+  margin-bottom: 8rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -279,7 +283,6 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
   margin-bottom: 8rem;
   /* select with attribute selector
@@ -297,7 +300,6 @@ body {
 }
 
 .row [class^="col-"] {
-  background-color: orangered;
   float: left;
 }
 
