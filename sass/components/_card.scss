@@ -103,7 +103,7 @@
     color: $color-white;
     position: absolute;
     top: 12rem;
-    right: 2rem;
+    right: 4rem;
     width: 75%;
   }
 
@@ -117,6 +117,22 @@
         to right bottom,
         rgba($color-secondary-light, 0.85),
         rgba($color-secondary-dark, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
       );
     }
   }
