@@ -207,6 +207,15 @@ body {
   margin-top: 8rem;
 }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -728,7 +737,7 @@ body {
 }
 
 .section-stories {
-  background-color: #f7f7f7;
+  position: relative;
   padding: 10rem 0;
 }
 /*# sourceMappingURL=main.css.map */

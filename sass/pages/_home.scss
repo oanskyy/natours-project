@@ -17,19 +17,18 @@
   transform: skewY(-7deg);
 
   // direct child selector, select all*
-  & > * { 
+  & > * {
     transform: skewY(7deg);
   }
 }
 
-.section-tours { 
+.section-tours {
   background-color: $color-grey-light-1;
   padding: 23rem 0 10rem 0;
   margin-top: -11vh;
 }
 
-.section-stories { 
-  background-color: $color-grey-light-1;
-  padding: 10rem 0; 
-
+.section-stories {
+  position: relative;
+  padding: 10rem 0;
 }
