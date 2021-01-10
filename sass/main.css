@@ -203,6 +203,10 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.u-margin-top-large {
+  margin-top: 8rem;
+}
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -243,6 +247,15 @@ body {
 
 .btn--white ::after {
   background-color: #fff;
+}
+
+.btn--green {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+.btn--green ::after {
+  background-color: #55c57a;
 }
 
 .btn::after {
@@ -639,7 +652,7 @@ body {
 
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 23rem 0 13rem 0;
   margin-top: -11vh;
 }
 /*# sourceMappingURL=main.css.map */
