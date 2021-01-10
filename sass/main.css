@@ -475,15 +475,18 @@ body {
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
+  -webkit-transform: skewX(-13deg);
+          transform: skewX(-13deg);
 }
 
 .story__shape {
+  position: relative;
   float: left;
   shape-outside: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
           clip-path: circle(50% at 50% 50%);
-  -webkit-transform: translateX(-3rem);
-          transform: translateX(-3rem);
+  -webkit-transform: translateX(-3rem) skewX(13deg);
+          transform: translateX(-3rem) skewX(13deg);
   width: 15rem;
   height: 15rem;
   background-color: palegoldenrod;
@@ -491,6 +494,23 @@ body {
 
 .story__img {
   height: 100%;
+}
+
+.story__text {
+  -webkit-transform: skewX(13deg);
+          transform: skewX(13deg);
+}
+
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  text-align: center;
 }
 
 .feature-box {
