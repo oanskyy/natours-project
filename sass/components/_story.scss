@@ -26,7 +26,7 @@
     transform: translateX(-4rem) scale(1.4);
     backface-visibility: hidden;
     height: 100%;
-    transition: all .5s;
+    transition: all .4s;
   }
 
   &__text { 
@@ -54,5 +54,6 @@
 
   &:hover &__img { 
     transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
   }
 }

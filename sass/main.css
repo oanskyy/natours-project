@@ -498,8 +498,8 @@ body {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   height: 100%;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .story__text {
@@ -533,6 +533,8 @@ body {
 .story:hover .story__img {
   -webkit-transform: translateX(-4rem) scale(1);
           transform: translateX(-4rem) scale(1);
+  -webkit-filter: blur(3px) brightness(80%);
+          filter: blur(3px) brightness(80%);
 }
 
 .feature-box {
