@@ -46,4 +46,41 @@
     visibility: hidden;
     transform: translateY(-4rem);
   }
+
+  &__radio-group { 
+    width: 49%; 
+    display: inline-block; 
+  }
+
+  &__radio-label { 
+    position: relative;
+    padding-left: 4rem;
+    font-size: $default-font-size; 
+    cursor: pointer;
+  }
+
+  &__radio-btn { 
+    position: absolute; 
+    top: -.4rem; 
+    left: 0;
+    display: inline-block;
+    height: 3rem; 
+    width: 3rem; 
+    border: 5px solid $color-primary; 
+    border-radius: 50%;
+
+    &::after { 
+      position: absolute; 
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: ""; 
+      display: block;
+      height: 1.3rem; 
+      width: 1.3rem;
+      background-color: $color-primary;
+      border-radius: 50%;
+      opacity: 0; 
+    }
+  }
 }
