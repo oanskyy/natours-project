@@ -568,6 +568,12 @@ body {
   background-color: #55c57a;
   border-radius: 50%;
   opacity: 0;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.form__radio-input:checked ~ .form__radio-label .form radio-btn::after {
+  opacity: 1;
 }
 
 .story {
