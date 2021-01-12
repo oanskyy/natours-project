@@ -52,6 +52,10 @@
     display: inline-block; 
   }
 
+  &__radio-input { 
+    display: none;
+  }
+  
   &__radio-label { 
     position: relative;
     padding-left: 4rem;
@@ -85,7 +89,7 @@
     }
   }
 
-  &__radio-input:checked ~ &__radio-label & radio-btn::after {
+  &__radio-input:checked ~ &__radio-label &__radio-btn::after {
     opacity: 1;
   }
 }
