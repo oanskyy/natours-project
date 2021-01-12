@@ -1,0 +1,80 @@
+.footer {
+  background-color: $color-grey-dark-3;
+  padding: 8rem 0;
+  padding-bottom: 1rem;
+  font-size: 1.4rem;
+
+  &__logo-box {
+    // the img which is an inline element, it behaves just like text
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+
+  &__navigation {
+    display: inline-block;
+    border-top: 1px solid $color-grey-dark; 
+    padding-top: 2rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block; 
+
+    &:not(:last-child) { 
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__link {
+    &:link, 
+    &:visited { 
+      display: inline-block;
+      color: $color-grey-light-1; 
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all .2s;
+    }
+
+    &:hover, 
+    &:active { 
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, .4);
+      transform: scale(1.1);
+    }
+  }
+
+  &__link-author { 
+    &:link, 
+    &:visited { 
+      display: inline-block;
+      color: $color-grey-light-1; 
+      text-decoration: none;
+    }
+
+    &:hover, 
+    &:active { 
+      color: $color-primary;
+      // box-shadow: 0 1rem 2rem rgba($color-black, .4);
+    }
+  }
+
+  &__copyright {
+    width: 35%;
+    border-top: 1px solid $color-grey-dark; 
+    padding-top: 2rem;
+    float: right;
+    text-align: right;
+  }
+
+  &__copyright-span { 
+    display: block;
+  }
+}
