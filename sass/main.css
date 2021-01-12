@@ -890,6 +890,17 @@ body {
   display: block;
 }
 
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  z-index: 100;
+  background-image: radial-gradient(#7ed56f, #28b485);
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
