@@ -890,6 +890,10 @@ body {
   display: block;
 }
 
+.navigation {
+  /* the general sibling selector */
+}
+
 .navigation__checkbox {
   display: none;
 }
@@ -902,7 +906,11 @@ body {
   height: 7rem;
   width: 7rem;
   background-color: #fff;
+  text-align: center;
   border-radius: 50%;
+  -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .navigation__background {
@@ -914,17 +922,22 @@ body {
   width: 6rem;
   border-radius: 50%;
   background-image: radial-gradient(#7ed56f, #28b485);
-  -webkit-transform: scale(90);
-          transform: scale(90);
+  -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
 .navigation__nav {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 110;
   height: 100vh;
-  width: 100%;
+  width: 0;
+  opacity: 0;
+  -webkit-transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .navigation__list {
@@ -933,6 +946,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 100%;
   list-style: none;
   text-align: center;
 }
@@ -966,6 +980,16 @@ body {
   color: #55c57a;
   -webkit-transform: translateX(1rem);
           transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  -webkit-transform: scale(90);
+          transform: scale(90);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  width: 100%;
+  opacity: 1;
 }
 
 .section-about {
