@@ -1011,6 +1011,8 @@ body {
   content: "";
   position: absolute;
   left: 0;
+  -webkit-transition: all .2s;
+  transition: all .2s;
 }
 
 .navigation__icon::before {
@@ -1019,6 +1021,14 @@ body {
 
 .navigation__icon::after {
   top: .8rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem;
 }
 
 .section-about {
