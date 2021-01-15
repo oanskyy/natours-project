@@ -1,5 +1,4 @@
 .navigation { 
-
   &__checkbox { 
     display: none;
   }
@@ -37,7 +36,6 @@
     z-index: 110;
     height: 100vh;
     width: 0; 
-    // background-color: plum;
     opacity: 0;
     transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
@@ -88,6 +86,8 @@
     }
   }
 
+
+  // FUNCTIONALITY
   /* the general sibling selector */
   &__checkbox:checked ~ &__background { 
     transform: scale(90);
@@ -96,5 +96,34 @@
   &__checkbox:checked ~ &__nav { 
     width: 100%; 
     opacity: 1;
+  }
+
+  // ICON 
+  &__icon { 
+    // position: relative; 
+    // margin-top: 3.rem;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    &, 
+    &::before, 
+    &::after { 
+      display: inline-block;
+      width: 3rem; 
+      height: 2px; 
+      background-color: $color-grey-dark-3;
+    }
+
+    // for the before and after pseudo elements to appear on the page, they need to have the content prop defined.
+    &::before, 
+    &::after { 
+      content: "";
+      position: absolute;
+      left: 0; 
+    } 
+    &::before { top: -.8rem;}
+    &::after { top: .8rem;}
   }
 }
