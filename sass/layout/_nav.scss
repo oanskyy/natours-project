@@ -131,4 +131,19 @@
   // select child elements
   &__button:hover &__icon::before { top: -1rem;}
   &__button:hover &__icon::after { top: 1rem;}
+
+  // select adjacent sibling with + and then child with space 
+  &__checkbox:checked + &__button &__icon { 
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before { 
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after { 
+    top: 0;
+    transform: rotate(-45deg);
+  }
 }
