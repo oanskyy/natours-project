@@ -6,11 +6,19 @@
   width: 100%; 
   height: 100vh;
   background-color: rgba($color-black, .8);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+
+  &:target { 
+    opacity: 1; 
+    visibility: visible;
+  }
 
   &__content { 
     @include absolute-center;
     width: 75%;
-    height: 80vh; 
+    // height: 80vh; 
     position: absolute;
     top: 50%; 
     left: 50%; 
@@ -18,5 +26,39 @@
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, .2);
     border-radius: 3px;
+    overflow: hidden;
+    display: table;
+  }
+
+  &__left { 
+    width: 33.33%;
+    display: table-cell;
+    // float: left;
+  }
+
+  &__right { 
+    width: 66.67%;
+    display: table-cell;
+    vertical-align: middle;
+    // float: left;
+    padding: 3rem 5rem; 
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text { 
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+
+    // columns: 2;
+
+    column-count: 2;
+    column-gap: 4rem; //1em=14px
+    column-rule: 1px solid $color-grey-light-2;
+
+    hyphens: auto;
   }
 }
