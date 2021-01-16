@@ -601,6 +601,21 @@ body {
   visibility: visible;
 }
 
+.popup__close:link, .popup__close:visited {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  color: #777;
+  font-size: 3rem;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+}
+
+.popup__close:hover {
+  color: #55c57a;
+}
+
 .popup__content {
   position: absolute;
   top: 50%;

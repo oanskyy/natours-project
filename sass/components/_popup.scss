@@ -15,6 +15,23 @@
     visibility: visible;
   }
 
+  &__close {
+    &:link, 
+    &:visited { 
+      position: absolute;
+      top: 2.5rem; 
+      right: 2.5rem;
+      color: $color-grey-dark;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      line-height: 1;
+    }
+    &:hover { 
+      color: $color-primary;
+    }
+  }
+
   &__content { 
     @include absolute-center;
     width: 75%;
