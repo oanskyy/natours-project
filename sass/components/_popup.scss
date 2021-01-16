@@ -15,22 +15,7 @@
     visibility: visible;
   }
 
-  &__close {
-    &:link, 
-    &:visited { 
-      position: absolute;
-      top: 2.5rem; 
-      right: 2.5rem;
-      color: $color-grey-dark;
-      font-size: 3rem;
-      text-decoration: none;
-      display: inline-block;
-      line-height: 1;
-    }
-    &:hover { 
-      color: $color-primary;
-    }
-  }
+  
 
   &__content { 
     @include absolute-center;
@@ -45,6 +30,10 @@
     border-radius: 3px;
     overflow: hidden;
     display: table;
+    opacity: 0; 
+    transform: translate(-50%,-50%) scale(.5);
+    // the .2s is a delay
+    transition: all .4s .2s;
   }
 
   &__left { 
@@ -77,5 +66,29 @@
     column-rule: 1px solid $color-grey-light-2;
 
     hyphens: auto;
+  }
+
+// when the popup becomes the target, we style the child element of the popup 
+  &:target &__content { 
+    opacity: 1; 
+    transform: translate(-50%,-50%) scale(1);
+  }
+
+
+  &__close {
+    &:link, 
+    &:visited { 
+      position: absolute;
+      top: 2.5rem; 
+      right: 2.5rem;
+      color: $color-grey-dark;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      line-height: 1;
+    }
+    &:hover { 
+      color: $color-primary;
+    }
   }
 }
