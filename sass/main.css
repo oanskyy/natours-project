@@ -5,13 +5,12 @@
 [1200 - 1800px]: Desktop - normal styles apply
 1800px ~: Big Desktop
 
-*/
-/*
 $breakpoint argument choices: 
 - mobile 
 - tab-port 
 - tab-land
 - big-desktop
+1em = 16px
 */
 @-webkit-keyframes moveInLeft {
   0% {
@@ -117,14 +116,26 @@ $breakpoint argument choices:
 
 html {
   font-size: 62.5%;
-  /* This defines what 1REM is 
+  /* This defines what 1REM is 10px 
   10 / 16 = 0.625
   font-size: 10px; */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 56.25em) {
   html {
     font-size: 50%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
   }
 }
 
