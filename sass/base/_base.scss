@@ -11,6 +11,10 @@ html {
   /* This defines what 1REM is 
   10 / 16 = 0.625
   font-size: 10px; */
+
+  @include respond(mobile){ 
+    font-size: 50%;
+  }
 }
 
 body {
