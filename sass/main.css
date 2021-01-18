@@ -900,6 +900,13 @@ body {
   /* the image is acutally an inline element. so it's a better practive to first have a small container/div where the image is inside  and then position that container to where we want the img to be  */
 }
 
+@media (max-width: 37.5em) {
+  .header {
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+}
+
 .header__logo-box {
   position: absolute;
   top: 4rem;
@@ -1096,6 +1103,13 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 56.25em) {
+  .navigation__button {
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
 .navigation__background {
   position: fixed;
   top: 6.5rem;
@@ -1109,6 +1123,13 @@ body {
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+@media (max-width: 56.25em) {
+  .navigation__background {
+    top: 3.5rem;
+    right: 3.5rem;
+  }
 }
 
 .navigation__nav {
