@@ -4,6 +4,10 @@
   padding-bottom: 1rem;
   font-size: 1.4rem;
 
+  @include respond(tab-port) { 
+    padding: 4rem 0;
+  }
+
   &__logo-box {
     // the img which is an inline element, it behaves just like text
     text-align: center;
@@ -19,6 +23,11 @@
     display: inline-block;
     border-top: 1px solid $color-grey-dark; 
     padding-top: 2rem;
+
+    @include respond(tab-port) { 
+      width: 100%; 
+      text-align: center;
+    }
   }
 
   &__list {
@@ -68,10 +77,17 @@
 
   &__copyright {
     width: 35%;
+    // width: 80%;
     border-top: 1px solid $color-grey-dark; 
     padding-top: 2rem;
     float: right;
     text-align: right;
+
+    @include respond(tab-port) { 
+      width: 100%; 
+      float: none;
+      // text-align: center;
+    }
   }
 
   &__copyright-span { 
