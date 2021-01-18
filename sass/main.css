@@ -10,6 +10,8 @@ $breakpoint argument choices:
 - tab-port 
 - tab-land
 - big-desktop
+
+ORDER: base + typography > general layout + grid > page layout > components
 1em = 16px
 */
 @-webkit-keyframes moveInLeft {
@@ -143,6 +145,13 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /* changes the box model so that the padding and borders/margin are not longer added to the total width or height of the element */
+  padding: 3rem;
+}
+
+@media (max-width: 56.25em) {
+  body {
+    padding: 0;
+  }
 }
 
 body {
@@ -152,7 +161,6 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
 }
 
 /* could be in components or typography */
@@ -174,6 +182,13 @@ body {
           animation: moveInLeft 1s ease-out;
 }
 
+@media (max-width: 37.5em) {
+  .heading-primary--main {
+    letter-spacing: 1rem;
+    font-size: 5rem;
+  }
+}
+
 .heading-primary--sub {
   display: block;
   font-size: 2rem;
@@ -181,6 +196,12 @@ body {
   letter-spacing: 1.75rem;
   -webkit-animation: moveInRight 1s ease-out;
           animation: moveInRight 1s ease-out;
+}
+
+@media (max-width: 37.5em) {
+  .heading-primary--sub {
+    letter-spacing: .5rem;
+  }
 }
 
 .heading-secondary {
@@ -196,6 +217,18 @@ body {
   letter-spacing: 2px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+@media (max-width: 56.25em) {
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .heading-secondary {
+    font-size: 2rem;
+  }
 }
 
 .heading-secondary:hover {

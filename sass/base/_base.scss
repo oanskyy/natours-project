@@ -23,4 +23,9 @@ html {
 body {
   box-sizing: border-box;
   /* changes the box model so that the padding and borders/margin are not longer added to the total width or height of the element */
+  padding: 3rem;
+
+  @include respond(tab-port){
+    padding: 0;
+  }
 }
