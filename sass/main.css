@@ -838,6 +838,12 @@ body {
   transition: transform .3s, -webkit-transform .3s;
 }
 
+@media (max-width: 56.25em) {
+  .feature-box {
+    padding: 2rem;
+  }
+}
+
 .feature-box__icon {
   font-size: 6rem;
   margin-bottom: 0.5rem;
@@ -847,6 +853,12 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+@media (max-width: 56.25em) {
+  .feature-box__icon {
+    margin-bottom: 0;
+  }
 }
 
 .feature-box:hover {
@@ -1349,7 +1361,7 @@ body {
 
 @media (max-width: 56.25em) {
   .section-features {
-    padding: 15rem 0;
+    padding: 10rem 0;
   }
 }
 
