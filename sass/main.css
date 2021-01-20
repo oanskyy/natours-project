@@ -809,6 +809,13 @@ body {
           transform: skewX(-13deg);
 }
 
+@media (max-width: 37.5em) {
+  .story {
+    -webkit-transform: skew(0);
+            transform: skew(0);
+  }
+}
+
 .story__shape {
   position: relative;
   float: left;
@@ -820,6 +827,13 @@ body {
           transform: translateX(-3rem) skewX(13deg);
   width: 15rem;
   height: 15rem;
+}
+
+@media (max-width: 37.5em) {
+  .story__shape {
+    -webkit-transform: translateX(-3rem) skew(0);
+            transform: translateX(-3rem) skew(0);
+  }
 }
 
 .story__img {
@@ -835,6 +849,13 @@ body {
 .story__text {
   -webkit-transform: skewX(13deg);
           transform: skewX(13deg);
+}
+
+@media (max-width: 37.5em) {
+  .story__text {
+    -webkit-transform: skew(0);
+            transform: skew(0);
+  }
 }
 
 .story__caption {

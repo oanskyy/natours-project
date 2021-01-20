@@ -9,6 +9,10 @@
   padding-left: 9rem; 
   transform: skewX(-13deg);
 
+  @include respond(mobile) { 
+    transform: skew(0);
+  }
+
   &__shape { 
     position: relative;
     float: left;
@@ -20,6 +24,11 @@
     transform: translateX(-3rem) skewX(13deg);
     width: 15rem; 
     height: 15rem; 
+
+
+  @include respond(mobile) { 
+    transform: translateX(-3rem) skew(0);
+  }
   }
 
   &__img { 
@@ -31,6 +40,11 @@
 
   &__text { 
     transform: skewX(13deg);
+
+
+  @include respond(mobile) { 
+    transform: skew(0);
+  }
   }
 
   &__caption { 
