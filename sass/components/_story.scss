@@ -9,9 +9,15 @@
   padding-left: 9rem; 
   transform: skewX(-13deg);
 
-  @include respond(mobile) { 
-    transform: skew(0);
-  }
+  @include respond(tab-port) {
+    width: 100%;
+    padding: 4rem;
+    padding-left: 7rem;
+}
+
+@include respond(mobile) {
+    transform: skewX(0);
+}
 
   &__shape { 
     position: relative;
@@ -26,9 +32,9 @@
     height: 15rem; 
 
 
-  @include respond(mobile) { 
-    transform: translateX(-3rem) skew(0);
-  }
+    @include respond(mobile) { 
+      transform: translateX(-3rem) skew(0);
+    }
   }
 
   &__img { 
@@ -42,9 +48,9 @@
     transform: skewX(13deg);
 
 
-  @include respond(mobile) { 
-    transform: skew(0);
-  }
+    @include respond(mobile) { 
+      transform: skew(0);
+    }
   }
 
   &__caption { 

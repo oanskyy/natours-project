@@ -34,6 +34,10 @@
   background-color: $color-grey-light-1;
   padding: 23rem 0 10rem 0;
   margin-top: -11vh;
+
+  @include respond(mobile) { 
+    padding: 15rem 0 10rem 0;
+  }
 }
 
 .section-stories {

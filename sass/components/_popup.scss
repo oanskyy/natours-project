@@ -15,8 +15,6 @@
     visibility: visible;
   }
 
-  
-
   &__content { 
     @include absolute-center;
     width: 75%;
@@ -34,12 +32,29 @@
     transform: translate(-50%,-50%) scale(.5);
     // the .2s is a delay
     transition: all .4s .2s;
+
+    @include respond(tab-land) { 
+      width: 90%; 
+    }
+
+    @include respond(tab-port) { 
+      width: 95%; 
+    }
   }
 
   &__left { 
     width: 33.33%;
     display: table-cell;
     // float: left;
+    
+    @include respond(tab-port) { 
+      vertical-align: middle;
+    }
+
+    @include respond(mobile) { 
+      display: none;
+    }
+    
   }
 
   &__right { 
@@ -59,13 +74,15 @@
     font-size: 1.4rem;
     margin-bottom: 4rem;
 
-    // columns: 2;
-
     column-count: 2;
     column-gap: 4rem; //1em=14px
     column-rule: 1px solid $color-grey-light-2;
-
     hyphens: auto;
+
+    @include respond(tab-port) { 
+      margin-bottom: 3rem;
+      column-count: 1;
+    }
   }
 
 // when the popup becomes the target, we style the child element of the popup 
